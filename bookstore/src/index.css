@@ -1,0 +1,84 @@
+body{
+  background-color: violet;
+}
+.header{
+  display:inline;
+  height: 30px;
+  width: auto;
+  margin-left: 20px;
+  margin-right: 20px;
+  animation:scroll 30s linear infinite alternate;
+  position:relative;
+
+}
+@keyframes scroll {
+  from{
+    right:0%;
+  }
+  to{
+    right:-30%;
+  }
+}
+.header>a>button{
+  background-color: aqua;
+  border: none;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+
+}
+.header>a>button:hover{
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.book>img{
+  height: 300px;
+  width: 500px;
+}
+.books{
+  display: flex;
+  flex-wrap:wrap;
+  gap: 20px;
+  justify-content:flex-start;
+}
+.book{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items:center;
+  border: 1px solid blue;
+  margin-top: 20px;
+  max-width: 500px;
+  max-height: 820px;
+  min-width: 500px;
+  min-height: 820px;
+}
+.book>button{
+  background-color: green;
+  margin-top: auto;
+  color: white;
+}
+.form{
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.form>input{
+  width: 600px;
+  height: 25px;
+  text-align: center;
+}
+.header>img{
+  width:auto;
+  height:500px;
+  text-align: center;
+}
+.header>h3{
+  text-align: center;
+  
+  
+}
